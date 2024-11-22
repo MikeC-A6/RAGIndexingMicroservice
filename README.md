@@ -27,3 +27,122 @@ The service is organized into four main components:
 
 ## Project Structure
 
+```
+├── src/                    # Source code directory
+│   ├── api/               # API Gateway implementation
+│   │   ├── __init__.py
+│   │   └── routes.py      # API endpoint definitions
+│   ├── indexing/          # Indexing strategy implementations
+│   │   ├── strategies/    # Individual indexing strategies
+│   │   │   ├── simple_directory_reader.py
+│   │   │   └── json_indexer.py
+│   │   ├── base.py       # Base indexing interface
+│   │   └── strategy_manager.py
+│   ├── output/           # Output formatting
+│   │   └── formatter.py  # Standardized output formatter
+│   ├── preprocessing/    # Document preprocessing
+│   │   ├── extractors/   # Text extraction implementations
+│   │   │   ├── text_extractor.py
+│   │   │   └── pdf_extractor.py
+│   │   └── processor.py  # Main preprocessing logic
+│   ├── utils/           # Utility functions
+│   │   └── validators.py # Request validation
+│   ├── config.py        # Application configuration
+│   └── main.py         # Application entry point
+├── tests/              # Test suite
+│   ├── test_api.py     # API endpoint tests
+│   ├── test_indexing.py # Indexing strategy tests
+│   ├── test_preprocessing.py # Preprocessing tests
+│   └── test_output.py  # Output formatting tests
+```
+
+## Module Descriptions
+
+### API Gateway (`src/api/`)
+- `routes.py`: Implements REST endpoints for document ingestion and strategy listing
+- Handles request validation and error responses
+- Routes requests to appropriate processing components
+
+### Indexing (`src/indexing/`)
+- `base.py`: Defines the base interface for indexing strategies
+- `strategy_manager.py`: Manages and coordinates different indexing strategies
+- **Strategies**:
+  - `simple_directory_reader.py`: Basic document directory processing
+  - `json_indexer.py`: Specialized JSON document processing with path tracking
+
+### Preprocessing (`src/preprocessing/`)
+- `processor.py`: Coordinates document preprocessing workflow
+- **Extractors**:
+  - `text_extractor.py`: Plain text document handling
+  - `pdf_extractor.py`: PDF document text extraction
+
+### Output (`src/output/`)
+- `formatter.py`: Standardizes processed data for embedding service consumption
+- Ensures consistent metadata structure
+
+### Utils (`src/utils/`)
+- `validators.py`: Input validation utilities for requests and files
+- Supports file type and size validation
+
+## Component Relationships
+
+1. **Request Flow**:
+   ```
+   Client Request → API Gateway → Preprocessing → Indexing → Output Formatter → Response
+   ```
+
+2. **Strategy Selection**:
+   ```
+   API Gateway → Strategy Manager → Specific Indexing Strategy
+   ```
+
+3. **Document Processing**:
+   ```
+   Preprocessing Module → Text/PDF Extractor → Indexing Strategy → Output Formatter
+   ```
+
+## Test Organization
+
+The test suite is organized to mirror the main package structure:
+
+### Unit Tests
+- `test_api.py`: API endpoint functionality and error handling
+- `test_indexing.py`: Individual indexing strategy implementations
+- `test_preprocessing.py`: Document preprocessing and extraction
+- `test_output.py`: Output formatting and standardization
+
+### Test Coverage
+- Each component has dedicated test cases
+- Tests verify both success and error scenarios
+- Integration points between components are tested
+
+## Configuration
+
+The service configuration (`config.py`) includes:
+- Maximum file size limits
+- Allowed file extensions
+- Default preprocessing settings
+- Environment-specific configurations
+
+## Usage Examples
+
+### Document Ingestion
+```python
+POST /api/ingest
+{
+    "client_id": "client123",
+    "documents": [{
+        "content": "document content",
+        "type": "txt",
+        "metadata": {"source": "example.txt"}
+    }],
+    "indexing_strategy": "simple_directory"
+}
+```
+
+### List Available Strategies
+```python
+GET /api/list-strategies
+Response: ["simple_directory", "json_index"]
+```
+
