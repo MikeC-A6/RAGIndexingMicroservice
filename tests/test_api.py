@@ -163,5 +163,50 @@ class TestAPI(unittest.TestCase):
                 self.assertIn('strategy', metadata)
                 self.assertEqual(metadata['strategy'], 'simple_directory')
 
+    def test_ingest_with_document_types(self):
+        """Test document ingestion endpoint with different document types."""
+        # Create a test PDF file in test_docs
+        pdf_content = "This is a test PDF document"
+        test_pdf_path = os.path.join("test_docs", "Test_PDF1.pdf")
+
+        test_data = {
+            "documents": [
+                {
+                    "type": "directory",
+                    "metadata": {
+                        "directory_path": "test_docs",
+                        "source": test_pdf_path,
+                        "document_type": "pdf_document",
+                        "page_count": 10,
+                        "pdf_version": "1.7"
+                    }
+                }
+            ],
+            "indexing_strategy": "simple_directory"
+        }
+
+        print("\nTesting PDF ingest with data:", json.dumps(test_data, indent=2))
+        response = self.client.post('/api/ingest', json=test_data)
+        print("Response status:", response.status_code)
+
+        result = response.get_json()
+        print("Response data:", json.dumps(result, indent=2))
+
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(isinstance(result, list))
+        self.assertTrue(len(result) > 0)
+
+        # Check metadata for each document chunk
+        for doc in result:
+            metadata = doc.get('metadata', {})
+            self.assertIn('source', metadata)
+            self.assertIn('timestamp', metadata)
+            self.assertIn('strategy', metadata)
+            self.assertEqual(metadata['strategy'], 'simple_directory')
+            # Update assertion to check for either file type since both might be present
+            self.assertIn('file_type', metadata)
+            self.assertIn(metadata['file_type'], ['.txt', '.pdf'], 
+                         f"Unexpected file type: {metadata['file_type']}")
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)

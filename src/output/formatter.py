@@ -39,17 +39,23 @@ class OutputFormatter:
             doc_type = self.FILE_EXTENSION_TO_DOCTYPE.get(extension, 'unknown_document')
             metadata['document_type'] = doc_type
 
+            # Add default metadata based on document type
+            if doc_type == 'text_document' and 'encoding' not in metadata:
+                metadata['encoding'] = 'utf-8'
+            elif doc_type == 'pdf_document':
+                if 'pdf_version' not in metadata:
+                    metadata['pdf_version'] = '1.7'
+                if 'page_count' not in metadata:
+                    metadata['page_count'] = 0
+            elif doc_type == 'json_document' and 'schema_version' not in metadata:
+                metadata['schema_version'] = '1.0'
+
             # Handle versioning
             if version_increment and 'version' in metadata:
                 metadata['version'] = self.schema_validator.increment_version(metadata['version'])
 
-            # Validate and enrich metadata with document type specific rules
+            # Validate and enrich metadata
             try:
-                # Pre-validate to ensure document type is set
-                if 'document_type' not in metadata and 'source' in metadata:
-                    extension = metadata['source'][metadata['source'].rfind('.'):].lower() if '.' in metadata['source'] else ''
-                    metadata['document_type'] = self.FILE_EXTENSION_TO_DOCTYPE.get(extension, 'unknown_document')
-                
                 validated_metadata = self.schema_validator.validate_metadata(metadata)
             except ValueError as e:
                 print(f"Warning: Metadata validation failed: {str(e)}")
@@ -60,7 +66,7 @@ class OutputFormatter:
             validated_metadata.update({
                 'processed_at': datetime.now().isoformat(),
                 'content_length': len(content),
-                'has_validation_errors': False
+                'has_validation_errors': validated_metadata.get('has_validation_errors', False)
             })
 
             formatted_chunk = {

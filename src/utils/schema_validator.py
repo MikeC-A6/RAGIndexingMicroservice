@@ -25,32 +25,120 @@ class SchemaValidator:
         '.htm': 'html_document'
     }
 
+    # Custom validation functions
+    @staticmethod
+    def validate_pdf_page_size(metadata: Dict[str, Any]) -> None:
+        """Validate PDF page size and PDF/A compliance."""
+        page_width = metadata.get('page_width', 0)
+        page_height = metadata.get('page_height', 0)
+        if page_width <= 0 or page_height <= 0:
+            raise ValueError("Invalid page dimensions")
+        if metadata.get('pdfa_compliant') is True and not metadata.get('pdfa_version'):
+            raise ValueError("PDF/A version required for PDF/A compliant documents")
+
+    @staticmethod
+    def validate_json_schema(metadata: Dict[str, Any]) -> None:
+        """Validate JSON schema compliance."""
+        if metadata.get('schema_version') and not metadata.get('schema_definition'):
+            raise ValueError("Schema definition required when schema_version is specified")
+        if metadata.get('schema_definition') and not isinstance(metadata['schema_definition'], dict):
+            raise ValueError("Invalid schema definition format")
+
+    @staticmethod
+    def validate_html_structure(metadata: Dict[str, Any]) -> None:
+        """Validate HTML structure and tags."""
+        if metadata.get('has_doctype') is False:
+            raise ValueError("HTML document must have a DOCTYPE declaration")
+        valid_doctypes = ['html5', 'html4', 'xhtml']
+        if metadata.get('doctype') and metadata['doctype'].lower() not in valid_doctypes:
+            raise ValueError(f"Invalid DOCTYPE. Must be one of: {', '.join(valid_doctypes)}")
+
+    @staticmethod
+    def validate_csv_structure(metadata: Dict[str, Any]) -> None:
+        """Validate CSV structure and columns."""
+        if not metadata.get('header_row', False) and not metadata.get('column_names'):
+            raise ValueError("CSV must have either header_row=True or defined column_names")
+        if metadata.get('column_count', 0) <= 0:
+            raise ValueError("Invalid column count")
+
     # Custom validation rules per document type
     DOCUMENT_TYPE_RULES = {
         'pdf_document': {
-            'required_fields': {'page_count': int, 'pdf_version': str},
-            'optional_fields': {'author': str, 'title': str},
-            'validation_functions': []
+            'required_fields': {
+                'page_count': int,
+                'pdf_version': str,
+                'page_width': float,
+                'page_height': float,
+                'pdfa_compliant': bool
+            },
+            'optional_fields': {
+                'author': str,
+                'title': str,
+                'pdfa_version': str,
+                'encryption_level': str,
+                'permissions': dict
+            },
+            'validation_functions': [validate_pdf_page_size]
         },
         'text_document': {
             'required_fields': {'encoding': str},
-            'optional_fields': {'line_count': int},
+            'optional_fields': {
+                'line_count': int,
+                'char_count': int,
+                'line_ending': str
+            },
             'validation_functions': []
         },
         'json_document': {
-            'required_fields': {'schema_version': str},
-            'optional_fields': {'root_keys': list},
-            'validation_functions': []
+            'required_fields': {
+                'schema_version': str,
+                'root_element_count': int
+            },
+            'optional_fields': {
+                'root_keys': list,
+                'schema_definition': dict,
+                'max_depth': int
+            },
+            'validation_functions': [validate_json_schema]
         },
         'word_document': {
             'required_fields': {'word_version': str},
-            'optional_fields': {'author': str, 'title': str, 'last_modified': str},
+            'optional_fields': {
+                'author': str,
+                'title': str,
+                'last_modified': str,
+                'revision_number': int
+            },
             'validation_functions': []
         },
         'html_document': {
-            'required_fields': {'html_version': str},
-            'optional_fields': {'meta_tags': dict, 'encoding': str},
-            'validation_functions': []
+            'required_fields': {
+                'html_version': str,
+                'has_doctype': bool,
+                'doctype': str
+            },
+            'optional_fields': {
+                'meta_tags': dict,
+                'encoding': str,
+                'css_count': int,
+                'js_count': int,
+                'validation_errors': list
+            },
+            'validation_functions': [validate_html_structure]
+        },
+        'csv_document': {
+            'required_fields': {
+                'column_count': int,
+                'header_row': bool,
+                'delimiter': str
+            },
+            'optional_fields': {
+                'column_names': list,
+                'row_count': int,
+                'has_quotes': bool,
+                'encoding': str
+            },
+            'validation_functions': [validate_csv_structure]
         }
     }
 
@@ -87,6 +175,9 @@ class SchemaValidator:
 
         # Apply document type specific validation rules
         doc_type = validated_metadata.get('document_type')
+        if doc_type is None:
+            raise ValueError("Document type is required")
+            
         if doc_type in cls.DOCUMENT_TYPE_RULES:
             type_rules = cls.DOCUMENT_TYPE_RULES[doc_type]
             

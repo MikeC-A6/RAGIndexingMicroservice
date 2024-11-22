@@ -96,7 +96,11 @@ class TestOutput(unittest.TestCase):
                 'source': 'test.pdf',
                 'timestamp': '2024-01-01',
                 'page_count': 10,
-                'pdf_version': '1.7'
+                'pdf_version': '1.7',
+                'page_width': 8.5,
+                'page_height': 11.0,
+                'pdfa_compliant': True,
+                'pdfa_version': '2b'
             }
         }]
         
@@ -105,14 +109,24 @@ class TestOutput(unittest.TestCase):
         self.assertEqual(metadata['document_type'], 'pdf_document')
         self.assertEqual(metadata['page_count'], 10)
         self.assertEqual(metadata['pdf_version'], '1.7')
+        self.assertEqual(metadata['page_width'], 8.5)
+        self.assertEqual(metadata['page_height'], 11.0)
+        self.assertTrue(metadata['pdfa_compliant'])
         
-        # Test JSON document validation
+        # Test JSON document validation with schema
         json_data = [{
             'content': '{"key": "value"}',
             'metadata': {
                 'source': 'test.json',
                 'timestamp': '2024-01-01',
-                'schema_version': '1.0'
+                'schema_version': '1.0',
+                'root_element_count': 1,
+                'schema_definition': {
+                    'type': 'object',
+                    'properties': {
+                        'key': {'type': 'string'}
+                    }
+                }
             }
         }]
         
@@ -120,7 +134,51 @@ class TestOutput(unittest.TestCase):
         metadata = formatted[0]['metadata']
         self.assertEqual(metadata['document_type'], 'json_document')
         self.assertEqual(metadata['schema_version'], '1.0')
-        self.assertIn('root_keys', metadata)  # Optional field should be added with default value
+        self.assertEqual(metadata['root_element_count'], 1)
+        self.assertIn('schema_definition', metadata)
+
+    def test_html_document_validation(self):
+        """Test HTML document validation rules."""
+        html_data = [{
+            'content': '<!DOCTYPE html><html><body>Test</body></html>',
+            'metadata': {
+                'source': 'test.html',
+                'timestamp': '2024-01-01',
+                'html_version': 'html5',
+                'has_doctype': True,
+                'doctype': 'html5',
+                'css_count': 0,
+                'js_count': 0
+            }
+        }]
+        
+        formatted = self.formatter.format(html_data)
+        metadata = formatted[0]['metadata']
+        self.assertEqual(metadata['document_type'], 'html_document')
+        self.assertEqual(metadata['html_version'], 'html5')
+        self.assertTrue(metadata['has_doctype'])
+        
+    def test_csv_document_validation(self):
+        """Test CSV document validation rules."""
+        csv_data = [{
+            'content': 'name,age,city\nJohn,30,New York',
+            'metadata': {
+                'source': 'test.csv',
+                'timestamp': '2024-01-01',
+                'column_count': 3,
+                'header_row': True,
+                'delimiter': ',',
+                'row_count': 1,
+                'has_quotes': False
+            }
+        }]
+        
+        formatted = self.formatter.format(csv_data)
+        metadata = formatted[0]['metadata']
+        self.assertEqual(metadata['document_type'], 'csv_document')
+        self.assertEqual(metadata['column_count'], 3)
+        self.assertTrue(metadata['header_row'])
+        self.assertEqual(metadata['delimiter'], ',')
 
     def test_empty_data_handling(self):
         """Test formatting of empty data."""
