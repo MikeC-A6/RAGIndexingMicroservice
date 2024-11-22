@@ -1,4 +1,5 @@
 from typing import List, Dict, Any
+from typing import Optional
 from src.preprocessing.extractors.text_extractor import TextExtractor
 from src.preprocessing.extractors.pdf_extractor import PDFExtractor
 
@@ -12,7 +13,7 @@ class PreprocessingModule:
             'directory': None  # Directory type doesn't need an extractor
         }
     
-    def process(self, documents: List[Dict[str, Any]], options: Dict = None) -> List[Dict[str, Any]]:
+    def process(self, documents: List[Dict[str, Any]], options: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
         """Process documents according to their type and specified options."""
         processed_docs = []
         options = options or {}
