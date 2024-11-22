@@ -8,7 +8,8 @@ class PreprocessingModule:
     def __init__(self):
         self.extractors = {
             'txt': TextExtractor(),
-            'pdf': PDFExtractor()
+            'pdf': PDFExtractor(),
+            'directory': None  # Directory type doesn't need an extractor
         }
     
     def process(self, documents: List[Dict[str, Any]], options: Dict = None) -> List[Dict[str, Any]]:
@@ -20,8 +21,17 @@ class PreprocessingModule:
             # Extract document type and content
             doc_type = doc.get('type', 'txt')
             content = doc.get('content', '')
+            metadata = doc.get('metadata', {})
             
-            # Get appropriate extractor
+            # Handle directory type differently
+            if doc_type == 'directory':
+                processed_docs.append({
+                    'content': '',  # Content will be processed by SimpleDirectoryReader
+                    'metadata': metadata
+                })
+                continue
+            
+            # Get appropriate extractor for non-directory types
             extractor = self.extractors.get(doc_type)
             if not extractor:
                 raise ValueError(f"Unsupported document type: {doc_type}")
@@ -38,7 +48,7 @@ class PreprocessingModule:
             
             processed_docs.append({
                 'content': processed_content,
-                'metadata': doc.get('metadata', {})
+                'metadata': metadata
             })
         
         return processed_docs
