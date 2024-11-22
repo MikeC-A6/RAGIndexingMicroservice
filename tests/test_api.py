@@ -208,5 +208,58 @@ class TestAPI(unittest.TestCase):
             self.assertIn(metadata['file_type'], ['.txt', '.pdf'], 
                          f"Unexpected file type: {metadata['file_type']}")
 
+    def test_ingest_pdf_with_validation_rules(self):
+        """Test PDF document ingestion with specific validation rules."""
+        test_docs_dir = "test_docs"
+        test_pdf_path = os.path.join(test_docs_dir, "Test_PDF1.pdf")
+
+        # First verify the PDF exists
+        if not os.path.exists(test_pdf_path):
+            print(f"\nWARNING: Test_PDF1.pdf not found at {test_pdf_path}")
+            self.skipTest(f"Test_PDF1.pdf not found at {test_pdf_path}. Please create this file before running the test.")
+
+        test_data = {
+            "documents": [
+                {
+                    "type": "directory",
+                    "metadata": {
+                        "directory_path": test_docs_dir,
+                        "source": test_pdf_path,
+                        "document_type": "pdf_document",
+                        "page_count": 10,
+                        "pdf_version": "1.7",
+                        "page_width": 8.5,
+                        "page_height": 11.0,
+                        "pdfa_compliant": True,
+                        "pdfa_version": "2b",
+                        "file_pattern": "*.pdf"  # Add this to filter for PDFs only
+                    }
+                }
+            ],
+            "indexing_strategy": "simple_directory"
+        }
+
+        print(f"\nTesting with PDF at: {test_pdf_path}")
+        print("\nTest data:", json.dumps(test_data, indent=2))
+
+        response = self.client.post('/api/ingest', json=test_data)
+        print("\nResponse status:", response.status_code)
+
+        result = response.get_json()
+        print("\nResponse data:", json.dumps(result, indent=2))
+
+        # Validate response
+        self.assertEqual(response.status_code, 200)
+        self.assertTrue(isinstance(result, list))
+        self.assertTrue(len(result) > 0)
+
+        # Validate PDF-specific metadata
+        for doc in result:
+            metadata = doc.get('metadata', {})
+            self.assertEqual(metadata.get('file_type'), '.pdf', 
+                            f"Expected PDF file, got {metadata.get('file_type')}")
+            self.assertTrue(test_pdf_path in metadata.get('source', ''), 
+                           f"Expected source to contain {test_pdf_path}")
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)

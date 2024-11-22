@@ -35,11 +35,23 @@ class SimpleDirectoryReader(BaseIndexer):
                 continue
 
             # Use LlamaIndex's SimpleDirectoryReader to process the directory
-            reader = LlamaDirectoryReader(
-                input_dir=directory_path,
-                recursive=True,
-                filename_as_id=True
-            )
+            file_pattern = doc.get('metadata', {}).get('file_pattern', '*.*')
+
+            # Configure reader based on file pattern
+            if file_pattern != '*.*':
+                required_ext = os.path.splitext(file_pattern)[1]  # Gets .pdf from *.pdf
+                reader = LlamaDirectoryReader(
+                    input_dir=directory_path,
+                    recursive=True,
+                    filename_as_id=True,
+                    required_exts=[required_ext]
+                )
+            else:
+                reader = LlamaDirectoryReader(
+                    input_dir=directory_path,
+                    recursive=True,
+                    filename_as_id=True
+                )
 
             # Load and process documents
             llama_docs = reader.load_data()
