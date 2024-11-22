@@ -12,4 +12,6 @@ dependencies = [
     "pytest>=8.3.3",
     "llama-index>=0.12.1",
     "nltk>=3.9.1",
+    "gunicorn>=23.0.0",
+    "flask-cors>=5.0.0",
 ]
