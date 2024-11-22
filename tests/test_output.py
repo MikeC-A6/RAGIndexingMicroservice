@@ -87,6 +87,41 @@ class TestOutput(unittest.TestCase):
                 f"Failed to detect correct document type for {filename}"
             )
         
+    def test_document_specific_validation_rules(self):
+        """Test validation rules specific to different document types."""
+        # Test PDF document validation
+        pdf_data = [{
+            'content': 'PDF content',
+            'metadata': {
+                'source': 'test.pdf',
+                'timestamp': '2024-01-01',
+                'page_count': 10,
+                'pdf_version': '1.7'
+            }
+        }]
+        
+        formatted = self.formatter.format(pdf_data)
+        metadata = formatted[0]['metadata']
+        self.assertEqual(metadata['document_type'], 'pdf_document')
+        self.assertEqual(metadata['page_count'], 10)
+        self.assertEqual(metadata['pdf_version'], '1.7')
+        
+        # Test JSON document validation
+        json_data = [{
+            'content': '{"key": "value"}',
+            'metadata': {
+                'source': 'test.json',
+                'timestamp': '2024-01-01',
+                'schema_version': '1.0'
+            }
+        }]
+        
+        formatted = self.formatter.format(json_data)
+        metadata = formatted[0]['metadata']
+        self.assertEqual(metadata['document_type'], 'json_document')
+        self.assertEqual(metadata['schema_version'], '1.0')
+        self.assertIn('root_keys', metadata)  # Optional field should be added with default value
+
     def test_empty_data_handling(self):
         """Test formatting of empty data."""
         formatted = self.formatter.format([])

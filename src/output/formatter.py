@@ -43,12 +43,18 @@ class OutputFormatter:
             if version_increment and 'version' in metadata:
                 metadata['version'] = self.schema_validator.increment_version(metadata['version'])
 
-            # Validate and enrich metadata
+            # Validate and enrich metadata with document type specific rules
             try:
+                # Pre-validate to ensure document type is set
+                if 'document_type' not in metadata and 'source' in metadata:
+                    extension = metadata['source'][metadata['source'].rfind('.'):].lower() if '.' in metadata['source'] else ''
+                    metadata['document_type'] = self.FILE_EXTENSION_TO_DOCTYPE.get(extension, 'unknown_document')
+                
                 validated_metadata = self.schema_validator.validate_metadata(metadata)
             except ValueError as e:
                 print(f"Warning: Metadata validation failed: {str(e)}")
                 validated_metadata = metadata
+                validated_metadata['has_validation_errors'] = True
 
             # Add processing metadata
             validated_metadata.update({
