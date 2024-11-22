@@ -1,18 +1,21 @@
 import unittest
+from datetime import datetime
 from src.output.formatter import OutputFormatter
 
 class TestOutput(unittest.TestCase):
     def setUp(self):
         self.formatter = OutputFormatter()
         
-    def test_output_formatting(self):
-        """Test output formatting for embedding service."""
+    def test_output_formatting_with_validation(self):
+        """Test output formatting with metadata validation."""
         test_data = [{
             'content': 'Test content',
             'metadata': {
                 'source': 'test.txt',
                 'chunk_index': 1,
-                'timestamp': '2024-01-01'
+                'timestamp': '2024-01-01',
+                'document_type': 'text',
+                'version': '1.0.0'
             }
         }]
         
@@ -22,7 +25,40 @@ class TestOutput(unittest.TestCase):
         self.assertTrue('text' in formatted[0])
         self.assertTrue('metadata' in formatted[0])
         self.assertEqual(formatted[0]['text'], 'Test content')
-        self.assertEqual(formatted[0]['metadata']['chunk_index'], 1)
+        self.assertTrue('processed_at' in formatted[0]['metadata'])
+        self.assertTrue('content_length' in formatted[0]['metadata'])
+        
+    def test_versioning_support(self):
+        """Test version increment functionality."""
+        test_data = [{
+            'content': 'Test content',
+            'metadata': {
+                'source': 'test.txt',
+                'timestamp': '2024-01-01',
+                'document_type': 'text',
+                'version': '1.0.0'
+            }
+        }]
+        
+        formatted = self.formatter.format(test_data, version_increment=True)
+        self.assertEqual(formatted[0]['metadata']['version'], '1.0.1')
+        
+    def test_metadata_validation(self):
+        """Test metadata validation and enrichment."""
+        test_data = [{
+            'content': 'Test content',
+            'metadata': {
+                'source': 'test.txt'
+            }
+        }]
+        
+        formatted = self.formatter.format(test_data)
+        metadata = formatted[0]['metadata']
+        
+        self.assertTrue('version' in metadata)
+        self.assertTrue('timestamp' in metadata)
+        self.assertTrue('document_type' in metadata)
+        self.assertEqual(metadata['document_type'], 'unknown')
         
     def test_empty_data_handling(self):
         """Test formatting of empty data."""
