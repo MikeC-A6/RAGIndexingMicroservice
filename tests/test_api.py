@@ -122,5 +122,46 @@ class TestAPI(unittest.TestCase):
         self.assertIn('simple_directory', data)
         self.assertIn('json_index', data)
 
+    def test_metadata_validation_in_ingest(self):
+        """Test that ingested documents have proper metadata validation."""
+        # Create a temporary test directory
+        import tempfile
+        import os
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            # Create a test file
+            test_file_path = os.path.join(temp_dir, "test.txt")
+            with open(test_file_path, "w") as f:
+                f.write("Test content")
+
+            # Test data with directory_path
+            data = {
+                "documents": [
+                    {
+                        "metadata": {
+                            "directory_path": temp_dir,
+                            "source": "test"
+                        },
+                        "type": "txt"
+                    }
+                ],
+                "indexing_strategy": "simple_directory"
+            }
+
+            response = self.client.post('/api/ingest', json=data)
+            self.assertEqual(response.status_code, 200)
+
+            result = response.get_json()
+            self.assertTrue(isinstance(result, list))
+            self.assertTrue(len(result) > 0)
+
+            # Check metadata
+            for doc in result:
+                metadata = doc.get('metadata', {})
+                self.assertIn('source', metadata)
+                self.assertIn('timestamp', metadata)
+                self.assertIn('strategy', metadata)
+                self.assertEqual(metadata['strategy'], 'simple_directory')
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)

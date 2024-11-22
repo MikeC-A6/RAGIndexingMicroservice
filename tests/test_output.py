@@ -58,7 +58,34 @@ class TestOutput(unittest.TestCase):
         self.assertTrue('version' in metadata)
         self.assertTrue('timestamp' in metadata)
         self.assertTrue('document_type' in metadata)
-        self.assertEqual(metadata['document_type'], 'unknown')
+        self.assertEqual(metadata['document_type'], 'text_document')
+        
+    def test_document_type_detection(self):
+        """Test automatic document type detection from file extensions."""
+        test_cases = [
+            ('document.pdf', 'pdf_document'),
+            ('notes.txt', 'text_document'),
+            ('data.json', 'json_document'),
+            ('doc.docx', 'word_document'),
+            ('page.html', 'html_document'),
+            ('unknown.xyz', 'unknown_document')
+        ]
+        
+        for filename, expected_type in test_cases:
+            test_data = [{
+                'content': 'Test content',
+                'metadata': {
+                    'source': filename
+                }
+            }]
+            
+            formatted = self.formatter.format(test_data)
+            metadata = formatted[0]['metadata']
+            self.assertEqual(
+                metadata['document_type'], 
+                expected_type,
+                f"Failed to detect correct document type for {filename}"
+            )
         
     def test_empty_data_handling(self):
         """Test formatting of empty data."""

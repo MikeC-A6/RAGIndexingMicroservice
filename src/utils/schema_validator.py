@@ -1,5 +1,6 @@
 from typing import Dict, Any, List, Optional
 from datetime import datetime
+import os
 
 class SchemaValidator:
     """Validates document metadata against predefined schemas."""
@@ -9,6 +10,19 @@ class SchemaValidator:
         'timestamp': str,
         'version': str,
         'document_type': str
+    }
+
+    FILE_EXTENSION_TO_DOCTYPE = {
+        '.txt': 'text_document',
+        '.pdf': 'pdf_document',
+        '.doc': 'word_document',
+        '.docx': 'word_document',
+        '.md': 'markdown_document',
+        '.json': 'json_document',
+        '.xml': 'xml_document',
+        '.csv': 'csv_document',
+        '.html': 'html_document',
+        '.htm': 'html_document'
     }
     
     @classmethod
@@ -24,9 +38,15 @@ class SchemaValidator:
         if 'timestamp' not in validated_metadata:
             validated_metadata['timestamp'] = datetime.now().isoformat()
             
-        # Add document_type if not present
-        if 'document_type' not in validated_metadata:
-            validated_metadata['document_type'] = 'unknown'
+        # Determine document type from source file extension
+        source = validated_metadata.get('source', '')
+        if source:
+            file_ext = os.path.splitext(source)[1].lower()
+            validated_metadata['document_type'] = self.FILE_EXTENSION_TO_DOCTYPE.get(
+                file_ext, 'unknown_document'
+            )
+        elif 'document_type' not in validated_metadata:
+            validated_metadata['document_type'] = 'unknown_document'
             
         # Validate required fields
         missing_fields = []
