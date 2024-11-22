@@ -1,0 +1,122 @@
+Architecture Document: Indexing Microservice for RAG Pipeline
+This document outlines the architecture for an Indexing Microservice, designed as a modular and extensible component in a Retrieval-Augmented Generation (RAG) pipeline. The indexing microservice processes raw documents, applies client-specified indexing strategies, and outputs structured data for the downstream Embedding Service. It does not include long-term storage but ensures compatibility with the pipeline.
+
+Purpose
+The Indexing Microservice processes raw documents into a structured format that downstream services (e.g., the Embedding Service) can use to generate embeddings and store vectors in a vector database. It supports extensibility for different indexing strategies and document types.
+
+Design Goals
+Pipeline Integration: Output data in a format consumable by the Embedding Service.
+Extensibility: Add new indexing strategies (e.g., JSON Indexer, GraphRAG) with minimal changes.
+Stateless Design: No persistent storage; outputs are immediately passed downstream.
+Scalability: Handle large datasets and concurrent requests efficiently.
+
+Components
+1. API Gateway
+Entry point for client requests.
+Handles input validation, authentication, and routing.
+
+2. Indexing Strategy Manager
+Core logic for selecting and executing client-specified indexing strategies.
+Dynamically loads the appropriate indexing module (e.g., SimpleDirectoryReader, JSON Indexer).
+Encapsulates:
+Indexing strategy logic.
+Preprocessing integration.
+
+3. Preprocessing Module
+Handles document-level operations before indexing, including:
+Text extraction (e.g., OCR for PDFs).
+Data cleaning (e.g., removing special characters).
+Chunking large documents into manageable parts.
+Outputs preprocessed chunks ready for indexing.
+
+4. Indexing Modules
+Plug-and-play modules implementing specific indexing strategies:
+LlamaIndex SimpleDirectoryReader: Processes directory-based files.
+JSON Indexer: Parses JSON data into indexable structures.
+GraphRAG Indexer (future): Constructs graph-based indices for relational queries.
+Each module adheres to a common interface for uniformity.
+
+5. Output Formatter
+Converts indexed data into a standardized output format compatible with the Embedding Service.
+Ensures consistency across different indexing strategies.
+
+Service Workflow
+Step 1: Client Request
+The client sends a request specifying:
+The documents to be indexed.
+The indexing strategy to use.
+Optional preprocessing instructions (e.g., OCR, chunking).
+Metadata, including client_id.
+Step 2: Preprocessing
+The Preprocessing Module prepares the raw documents:
+Cleans data.
+Extracts text from non-textual formats (e.g., images, PDFs).
+Chunks large documents.
+Step 3: Indexing
+The Indexing Strategy Manager selects the specified indexing module.
+The selected module processes the preprocessed documents and generates structured index data.
+Step 4: Formatting
+The Output Formatter converts the indexed data into chunks ready for embedding.
+The formatted output is passed directly to the Embedding Service.
+
+Endpoints
+1. /ingest
+Purpose: Processes raw documents and generates structured output for embedding.
+Parameters:
+client_id: Identifier for isolating client requests.
+documents: List of raw documents.
+indexing_strategy: Name of the indexing strategy (e.g., simple_directory, json_index).
+preprocessing_options (optional): Instructions for preprocessing (e.g., chunk size, OCR).
+Outputs:
+Preprocessed and indexed chunks for embedding.
+
+2. /list-strategies
+Purpose: Lists all available indexing strategies.
+Outputs:
+Supported indexing strategies (e.g., simple_directory, json_index, graph_rag).
+
+Input and Output
+Input
+Raw Documents:
+Format: Text, PDF, JSON, or other supported types.
+Metadata: Optional tags, document IDs, and client-specific information.
+Output
+Structured Chunks:
+Preprocessed text with metadata.
+Ready for embedding by the Embedding Service.
+
+Extensibility
+Adding a New Indexing Service
+Implement a new module that adheres to the common Indexing Module Interface:
+Input: Preprocessed documents.
+Output: Structured indexed chunks.
+Register the module with the Indexing Strategy Manager.
+Expose the new strategy via the /list-strategies endpoint.
+
+Scalability Considerations
+Stateless Design:
+The service processes data in-memory and immediately passes results downstream.
+Avoids storage overhead, enabling horizontal scaling.
+Asynchronous Processing:
+Use asynchronous workers (e.g., Celery, RabbitMQ) to handle large datasets and concurrent requests.
+Load Balancing:
+Deploy multiple instances behind a load balancer to distribute workload.
+
+Example Workflow in the RAG Pipeline
+Indexing Microservice:
+Processes raw documents into structured chunks.
+Outputs chunks to the Embedding Service.
+Embedding Service:
+Converts chunks into vector embeddings.
+Vector Storage Service:
+Stores embeddings for similarity search during retrieval.
+
+Key Features
+Client Flexibility:
+Clients specify indexing strategies and preprocessing needs.
+Pipeline Integration:
+Outputs data in a format directly usable by the Embedding Service.
+Scalability:
+Stateless design ensures high throughput and low latency.
+Extensibility:
+New indexing strategies can be added seamlessly.
