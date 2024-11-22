@@ -11,4 +11,5 @@ dependencies = [
     "pypdf2>=3.0.1",
     "pytest>=8.3.3",
     "llama-index>=0.12.1",
+    "nltk>=3.9.1",
 ]
