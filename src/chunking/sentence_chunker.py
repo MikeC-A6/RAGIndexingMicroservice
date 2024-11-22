@@ -9,14 +9,11 @@ class SentenceChunker(BaseChunker):
     def __init__(self):
         """Initialize the sentence chunker and download required NLTK data."""
         try:
-            # Ensure the punkt tokenizer data is downloaded
-            nltk.data.find('tokenizers/punkt')
-        except LookupError:
-            try:
-                # Download punkt tokenizer data
-                nltk.download('punkt')
-            except Exception as e:
-                raise RuntimeError(f"Failed to download NLTK punkt tokenizer: {str(e)}")
+            # Download both required NLTK resources
+            nltk.download('punkt', quiet=True)
+            nltk.download('punkt_tab', quiet=True)
+        except Exception as e:
+            raise RuntimeError(f"Failed to download NLTK resources: {str(e)}")
 
     @property
     def strategy_name(self) -> str:

@@ -1,35 +1,47 @@
-from flask import Flask
-from .api.routes import api_bp
-from .config import Config
+from flask import Flask, request, jsonify
+from .chunking.manager import ChunkerManager
+from .chunking.sentence_chunker import SentenceChunker
+from .indexing.strategies import SimpleDirectoryReader
 
-def create_app(config_class=Config):
+def create_app():
     app = Flask(__name__)
-    app.config.from_object(config_class)
-    
-    # Register blueprints
-    app.register_blueprint(api_bp, url_prefix='/api')
-    
-    @app.route('/')
-    def index():
-        return {
-            'status': 'ok',
-            'message': 'Indexing Microservice API',
-            'endpoints': [
-                '/api/ingest',
-                '/api/list-strategies'
-            ]
-        }
 
-    @app.errorhandler(404)
-    def not_found_error(error):
-        return {'error': 'Not Found'}, 404
+    # Initialize and register chunking strategies
+    chunker_manager = ChunkerManager()
+    # Changed this line - we pass the class, not an instance
+    chunker_manager.register_strategy(SentenceChunker)  # Remove the parentheses
 
-    @app.errorhandler(500)
-    def internal_error(error):
-        return {'error': 'Internal Server Error'}, 500
-    
+    @app.route('/api/ingest', methods=['POST'])
+    def ingest():
+        try:
+            data = request.get_json()
+            documents = data.get('documents', [])
+            strategy_name = data.get('indexing_strategy')
+            chunk_params = data.get('chunk_params')
+
+            print("\nIncoming documents:", documents)  # Debug print
+
+            if not documents:
+                return jsonify({'error': 'No documents provided'}), 400
+
+            # Process documents using the specified strategy
+            if strategy_name == 'sentence_chunker':
+                chunker = chunker_manager.get_strategy(strategy_name)
+                processed_docs = chunker.chunk_document(
+                    documents[0].get('content', ''),
+                    documents[0].get('metadata', {}),
+                    chunk_params
+                )
+                return jsonify(processed_docs)
+            elif strategy_name == 'simple_directory':
+                reader = SimpleDirectoryReader()
+                result = reader.index(documents)
+                return jsonify(result)
+
+            return jsonify({'error': f'Unknown strategy: {strategy_name}'}), 400
+
+        except Exception as e:
+            print(f"\nError during processing: {str(e)}")  # Debug print
+            return jsonify({'error': str(e)}), 500
+
     return app
-
-if __name__ == "__main__":
-    app = create_app()
-    app.run(host="0.0.0.0", port=5000)

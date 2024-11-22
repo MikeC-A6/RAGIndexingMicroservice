@@ -1,0 +1,806 @@
+[
+  {
+    "content": "Merit -based \nIncentive \nPayment System \n(MIPS)\n2024 Measures and Activities for \nPhysical and Occupational Therapy \nProfessionals\n\nTable of Contents\nHow To Use This Guide 3\nOverview 5\nPerformance Categories 9\nQuality Performance Category 10\nPromoting Interoperability Performance Category 14\nImprovement Activities Performance Category 17\nCost Performance Category 18\nHelp, Resources, and Version History 20\n\u2022Where Can You Go for Help? 21\n\u2022Version History 23\n2\nHow to Use This \nGuide\n3\nHow to Use This Guide\n4\nPlease Note: This guide was prepared for \ninformational purposes only and isn\u2019t intended \nto grant rights or impose obligations. The \ninformation provided is only intended to be a \ngeneral summary.",
+    "metadata": {
+      "chunk_index": 0,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 0,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "The \ninformation provided is only intended to be a \ngeneral summary. It isn\u2019t intended to take the \nplace of the written law, including the \nregulations. We encourage readers to review the \nspecific statutes, regulations, and other \ninterpretive materials for a full and accurate \nstatement of their contents.Table of Contents\nThe Table of Contents is interactive.",
+    "metadata": {
+      "chunk_index": 1,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 2,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "We encourage readers to review the \nspecific statutes, regulations, and other \ninterpretive materials for a full and accurate \nstatement of their contents.Table of Contents\nThe Table of Contents is interactive. Click on a \nChapter in the Table of Contents to read that \nsection. You can also click on the icon on \nthe bottom left to go back to the Table of \nContents.",
+    "metadata": {
+      "chunk_index": 2,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 4,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "You can also click on the icon on \nthe bottom left to go back to the Table of \nContents. Hyperlinks\nHyperlinks to the Quality Payment Program \nwebsite  are included throughout the guide to \ndirect the reader to more information and \nresources.O V E R V I E W\nOverview\n5\n6\nWhat is the Merit -based Incentive \nPayment System? If you\u2019re eligible for MIPS in 2024:\n\u2022You have to report measure and activity data for the quality (PDF, 271KB) , improvement \nactivities (PDF, 298KB) , and Promoting Interoperability (PDF, 244KB)  performance categories.",
+    "metadata": {
+      "chunk_index": 3,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 6,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "If you\u2019re eligible for MIPS in 2024:\n\u2022You have to report measure and activity data for the quality (PDF, 271KB) , improvement \nactivities (PDF, 298KB) , and Promoting Interoperability (PDF, 244KB)  performance categories. oExceptions to these reporting requirements include your MIPS reporting option ,special \nstatus , clinician type, extreme and uncontrollable circumstances (EUC)  orhardship \nexception . Detailed information will be available in the forthcoming 2024 Traditional MIPS \nScoring Guide, 2024 APP Scoring Guide and 2024 MIPS Value Pathways Implementation \nGuide.",
+    "metadata": {
+      "chunk_index": 4,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 8,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Detailed information will be available in the forthcoming 2024 Traditional MIPS \nScoring Guide, 2024 APP Scoring Guide and 2024 MIPS Value Pathways Implementation \nGuide. These will be posted to the QPP Resource Library . \u2022We collect and calculate data for the cost (PDF, 348KB)  performance category for you, if \napplicable.",
+    "metadata": {
+      "chunk_index": 5,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 10,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022We collect and calculate data for the cost (PDF, 348KB)  performance category for you, if \napplicable. oExceptions include your MIPS reporting option , participation option ,extreme and \nuncontrollable circumstances  and whether or not you meet the case minimum for any \ncost measures. Detailed information will be available in the forthcoming 2024 MIPS Cost \nUser Guide, which will be posted on the QPP Resource Library .",
+    "metadata": {
+      "chunk_index": 6,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 12,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Detailed information will be available in the forthcoming 2024 MIPS Cost \nUser Guide, which will be posted on the QPP Resource Library . \u2022Your performance across the MIPS performance categories, each with a specific weight, will \nresult in a MIPS final score of 0 to 100 points. \u2022Your MIPS final score will determine whether you receive a negative, neutral, or positive MIPS \npayment adjustment.",
+    "metadata": {
+      "chunk_index": 7,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 14,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022Your MIPS final score will determine whether you receive a negative, neutral, or positive MIPS \npayment adjustment. oPositive payment adjustment for clinicians with a 2024 final score above 75. \noNeutral payment adjustment for clinicians with a 2024 final score equal to 75. \noNegative payment adjustment for clinicians with a 2024 final score below 75. \u2022Your MIPS payment adjustment is based on your performance during the 2024 performance \nyear and applied to payments for your Medicare Part B -covered professional services \nbeginning on January 1, 2026.O V E R V I E W\nTo learn more about MIPS eligibility and \nparticipation options:\n\u2022Visit the How MIPS Eligibility is \nDetermined  and Participation Options \nOverview  webpages on the Quality \nPayment Program website .",
+    "metadata": {
+      "chunk_index": 8,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 16,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022Your MIPS payment adjustment is based on your performance during the 2024 performance \nyear and applied to payments for your Medicare Part B -covered professional services \nbeginning on January 1, 2026.O V E R V I E W\nTo learn more about MIPS eligibility and \nparticipation options:\n\u2022Visit the How MIPS Eligibility is \nDetermined  and Participation Options \nOverview  webpages on the Quality \nPayment Program website . \u2022Check your current participation status \nusing the QPP Participation Status \nTool . What is the Merit -based Incentive Payment System (Continued)\n7O V E R V I E W\n\u2022The newest reporting option, offering clinicians \na more meaningful and reduced grouping of \nmeasures and activities relevant to a specialty \nor medical condition.",
+    "metadata": {
+      "chunk_index": 9,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 18,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "What is the Merit -based Incentive Payment System (Continued)\n7O V E R V I E W\n\u2022The newest reporting option, offering clinicians \na more meaningful and reduced grouping of \nmeasures and activities relevant to a specialty \nor medical condition. \u2022Visit the MIPS Value Pathways (MVPs) webpage \nto learn more. \u2022You select an MVP that\u2019s applicable to your \npractice.",
+    "metadata": {
+      "chunk_index": 10,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 20,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022You select an MVP that\u2019s applicable to your \npractice. \u2022Then you choose from the quality measures and \nimprovement activities available in your \nselected MVP. \u2022You\u2019ll report a reduced number of quality \nmeasures and improvement activities as \ncompared to traditional MIPS.",
+    "metadata": {
+      "chunk_index": 11,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 22,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022You\u2019ll report a reduced number of quality \nmeasures and improvement activities as \ncompared to traditional MIPS. \u2022You\u2019ll report the complete Promoting \nInteroperability measure set (the same as \nreported in traditional MIPS). \u2022We collect and calculate data for the cost \nperformance category and population health \nmeasures for you.There are 3 reporting options  available to MIPS eligible clinicians to meet MIPS reporting requirements:\n\u2022The original reporting option for MIPS.",
+    "metadata": {
+      "chunk_index": 12,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 24,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022We collect and calculate data for the cost \nperformance category and population health \nmeasures for you.There are 3 reporting options  available to MIPS eligible clinicians to meet MIPS reporting requirements:\n\u2022The original reporting option for MIPS. \u2022Visit the Traditional MIPS Overview webpage  to \nlearn more. \u2022You select the quality measures and \nimprovement activities that you\u2019ll collect and \nreport from all of the quality measures and \nimprovement activities finalized for MIPS.",
+    "metadata": {
+      "chunk_index": 13,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 26,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022You select the quality measures and \nimprovement activities that you\u2019ll collect and \nreport from all of the quality measures and \nimprovement activities finalized for MIPS. \u2022You\u2019ll report the complete Promoting \nInteroperability measure set. \u2022We collect and calculate data for the cost \nperformance category for you.",
+    "metadata": {
+      "chunk_index": 14,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 28,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022We collect and calculate data for the cost \nperformance category for you. \u2022A streamlined reporting option for clinicians \nwho participate in a MIPS Alternative Payment \nModel (APM) . \u2022Visit the APM Performance Pathway webpage \nto learn more.",
+    "metadata": {
+      "chunk_index": 15,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 30,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022Visit the APM Performance Pathway webpage \nto learn more. \u2022You\u2019ll report a predetermined set of quality \nmeasures. \u2022MIPS APM participants currently receive full \ncredit in the improvement activities \nperformance category, though this is evaluated \non an annual basis.",
+    "metadata": {
+      "chunk_index": 16,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 32,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022MIPS APM participants currently receive full \ncredit in the improvement activities \nperformance category, though this is evaluated \non an annual basis. \u2022You\u2019ll report the complete Promoting \nInteroperability measure set (the same as \nreported in traditional MIPS). \u2022Cost isn\u2019t evaluated under the APP.",
+    "metadata": {
+      "chunk_index": 17,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 34,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022Cost isn\u2019t evaluated under the APP. Traditional \nMIPS\nMIPS Value \nPathways \n(MVPs)\nAPM \nPerformance \nPathway \n(APP)\nMIPS Value Pathways (MVPs)\nMVPs are the newest way that you can meet reporting requirements, offering a more meaningful way to participate in MIPS. \u2022Each MVP includes a subset of measures and activities related to a specialty or medical condition.",
+    "metadata": {
+      "chunk_index": 18,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 36,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022Each MVP includes a subset of measures and activities related to a specialty or medical condition. \u2022While some MVPs are considered most applicable to certain specialties, you aren\u2019t limited to only those identified MVPs. Clinicians may select the MVP that aligns best with their scope of care and for which they\u2019re able to meet the reporting \nrequirements.",
+    "metadata": {
+      "chunk_index": 19,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 38,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Clinicians may select the MVP that aligns best with their scope of care and for which they\u2019re able to meet the reporting \nrequirements. 8O V E R V I E W\nThere are 16 MVPs finalized for the 2024 performance year . You can review each MVP in detail by clicking the links below.",
+    "metadata": {
+      "chunk_index": 20,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 40,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "You can review each MVP in detail by clicking the links below. Additional MIPS MVPs available for 2024:\n\u2022Adopting Best Practices and Promoting Patient Safety within Emergency \nMedicine MVP\n\u2022Advancing Cancer Care MVP\n\u2022Advancing Care for Heart Disease MVP \n\u2022Advancing Rheumatology Patient Care MVP\n\u2022Coordinating Stroke Care to Promote Prevention and Cultivate Positive \nOutcomes MVP \n\u2022Focusing on Women\u2019s Health MVP\n\u2022Improving Care for Lower Extremity Joint Repair MVP\n\u2022Optimal Care for Kidney Health MVP\n\u2022Optimal Care for Patients with Episodic Neurological Conditions MVP\n\u2022Patient Safety and Support of Positive Experiences with Anesthesia MVP\n\u2022Prevention and Treatment of Infectious Disorders Including Hepatitis C and \nHIV MVP\n\u2022Quality Care for the Treatment of Ear, Nose, and Throat Disorders MVP\n\u2022Quality Care in Mental Health and Substance Use Disorders MVP\n\u2022Value in Primary Care MVP \n\u2022Supportive Care for Neurodegenerative Conditions MVPMVPs that are most applicable to the physical and occupational specialty:\n\u2022Rehabilitative Support for Musculoskeletal Care MVP\nPerformance \nCategories\n9\nQuality Performance Category  \u2013 Traditional MIPS\nGetting Started with Quality\n1.Understand Your Reporting Requirements\n\u2022To meet the quality performance category requirements, you must report:\n2.Choose Your Quality Measures\n\u2022Use the 2024 Quality Measures List (XLSX, 999KB)  to identify:\n\u2014The available collection type(s) for each measure\n\u2014Measure type (outcome, patient experience, etc.) \u2014Specialty sets associated with each measure\n10P E R F O R M A N C E  C A T E G O R I E S\nOR\nDid you know?",
+    "metadata": {
+      "chunk_index": 21,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 42,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2014Specialty sets associated with each measure\n10P E R F O R M A N C E  C A T E G O R I E S\nOR\nDid you know? \u2022Collection Type refers to the way you collect data for a quality measure. While an individual quality measure may be collected in multiple \nways, each collection type has its own specifications (instructions) for reporting that measure.",
+    "metadata": {
+      "chunk_index": 22,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 44,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "While an individual quality measure may be collected in multiple \nways, each collection type has its own specifications (instructions) for reporting that measure. You would follow the measure  \nspecifications that correspond with how you choose to collect your quality data. \u2022For example: You\u2019re looking for a quality measure to report on the Use of High -Risk Medications in Older Adults (ID: 238).",
+    "metadata": {
+      "chunk_index": 23,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 46,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022For example: You\u2019re looking for a quality measure to report on the Use of High -Risk Medications in Older Adults (ID: 238). The measure is \navailable as 2 distinct collections types with 2 distinct specifications: MIPS CQM (clinical quality measure) and eCQM  (electronic clinical \nquality measure). You would use the measure specification that corresponds with how you choose to collect your data.",
+    "metadata": {
+      "chunk_index": 24,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 48,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "You would use the measure specification that corresponds with how you choose to collect your data. \u2022You can report measures from multiple collection types to meet quality reporting requirements.6 quality measures\nIncluding at least 1 outcome  \nmeasure or high -priority measure in \nabsence of an applicable outcome \nmeasure.A defined specialty measure set or \nsub-specialty measure set\nIf the measure set has fewer than 6 \nmeasures, you need to submit all \napplicable measures within that set. Quality Performance Category  \u2013 Traditional MIPS (Continued)\n3.Collect Your Data\n\u2022You should start data collection on January 1, 2024,  to meet data completeness \nrequirements.",
+    "metadata": {
+      "chunk_index": 25,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 50,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Quality Performance Category  \u2013 Traditional MIPS (Continued)\n3.Collect Your Data\n\u2022You should start data collection on January 1, 2024,  to meet data completeness \nrequirements. If you fail to meet data completeness requirements, you\u2019ll receive \nzero points for the measure unless you\u2019re a small practice (15 or fewer clinicians), \nwho will still receive 3 points. \u2022You must collect data for a 12 -month performance period (January 1 to December \n31, 2024).",
+    "metadata": {
+      "chunk_index": 26,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 52,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022You must collect data for a 12 -month performance period (January 1 to December \n31, 2024). \u2022The data completeness requirement increased to 75% beginning with the 2024 \nperformance period , which means that you need to report performance data (met, \nnot met, or exclusion/exceptions) for at least 75% of denominator -eligible \nencounters. \u2022If you\u2019re working with a third party intermediary to collect and submit data, make \nsure you work with them throughout the year on data collection.",
+    "metadata": {
+      "chunk_index": 27,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 54,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022If you\u2019re working with a third party intermediary to collect and submit data, make \nsure you work with them throughout the year on data collection. 4.Submit Your Data\n\u2022The data submission period will begin on January 2, 2025 , and end no later than April \n1, 2025 . If reporting Medicare Part B claims measures, submission will be continuous \nthroughout the performance  period.",
+    "metadata": {
+      "chunk_index": 28,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 56,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "If reporting Medicare Part B claims measures, submission will be continuous \nthroughout the performance  period. 5.Review Performance Feedback\n\u2022Measure and activity -level scoring information will be available beginning January 2, \n2025 , once data has been submitted. \u2022We anticipate final scores will be available in summer 2025 .",
+    "metadata": {
+      "chunk_index": 29,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 58,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022We anticipate final scores will be available in summer 2025 . \u2022You can review your performance feedback by signing in to the Quality Payment \nProgram website . 11P E R F O R M A N C E  C A T E G O R I E S\nDid you know?",
+    "metadata": {
+      "chunk_index": 30,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 60,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "11P E R F O R M A N C E  C A T E G O R I E S\nDid you know? The level at which you participate in MIPS  \n(individual, group, or virtual group) applies to \nall performance categories. We won\u2019t combine \ndata submitted at the individual, group, and/or \nvirtual group level into a single final score.",
+    "metadata": {
+      "chunk_index": 31,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 62,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "We won\u2019t combine \ndata submitted at the individual, group, and/or \nvirtual group level into a single final score. For example:\n\u2022If you submit any data as an individual, \nyou\u2019ll be evaluated for all performance \ncategories as an individual. \u2022If your practice submits any data as a group, \nyou\u2019ll be evaluated for all performance \ncategories as a group.",
+    "metadata": {
+      "chunk_index": 32,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 64,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022If your practice submits any data as a group, \nyou\u2019ll be evaluated for all performance \ncategories as a group. \u2022If a clinician has multiple final scores, CMS \nwill use the following hierarchy to assign the \nfinal score and determine the payment \nadjustment:\noVirtual group final score\noHighest available final score from \nthe group or individual participation\n* Note: Subgroups are only available within \nMVP reporting. Refer to the MIPS Value \nPathways (MVPs)  webpage for additional \ninformation.",
+    "metadata": {
+      "chunk_index": 33,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 66,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Refer to the MIPS Value \nPathways (MVPs)  webpage for additional \ninformation. Quality Performance Category  \u2013 Traditional MIPS (Continued)\n12P E R F O R M A N C E  C A T E G O R I E S\n30% of final score   \nfor most MIPS eligible \nclinicians, groups, and \nvirtual groups. Please refer to Help, \nResources, and Version \nHistory  for more \ninformation.\u2022Urinary Incontinence: assessment of presence or absence of urinary incontinence in women aged 65 \nyears and older (Identifier [ID]: 048)\n\u2022Urinary incontinence: plan of care for urinary incontinence in women aged 65 years and older (ID: \n050)\n\u2022Diabetes mellitus: diabetic foot and ankle care, peripheral neuropathy - neurological evaluation (ID: \n126)\n\u2022Diabetes mellitus: diabetic foot and ankle care, ulcer prevention - evaluation of footwear (ID: 127)\n\u2022Documentation of current medications in the medical record (ID: 130)\n\u2022Preventive care and screening: screening for depression and follow -up plan (ID: 134)\n\u2022Falls: plan of care (ID: 155)\n\u2022Elder maltreatment screen and follow -up plan (ID: 181)\n\u2022Functional outcome assessment (ID: 182)\n\u2022Functional status change for patients with knee impairments (ID: 217)\n\u2022Functional status change for patients with hip impairments (ID: 218)\n\u2022Functional status change for patients with lower leg, foot or ankle impairments (ID: 219)\n\u2022Functional status change for patients with low back impairments (ID: 220)\n\u2022Functional status change for patients with shoulder impairments (ID: 221)\n\u2022Functional status change for patients with elbow, wrist or hand impairments (ID: 222)\n\u2022Preventive care and screening: tobacco use: screening and cessation intervention (ID: 226)\n\u2022Dementia: cognitive assessment (ID: 281)The Physical Therapy/Occupational Therapy Specialty Measure Set contains quality measures relevant \nto the physical therapy and occupational therapy specialties and includes the measures below.",
+    "metadata": {
+      "chunk_index": 34,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 68,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Please refer to Help, \nResources, and Version \nHistory  for more \ninformation.\u2022Urinary Incontinence: assessment of presence or absence of urinary incontinence in women aged 65 \nyears and older (Identifier [ID]: 048)\n\u2022Urinary incontinence: plan of care for urinary incontinence in women aged 65 years and older (ID: \n050)\n\u2022Diabetes mellitus: diabetic foot and ankle care, peripheral neuropathy - neurological evaluation (ID: \n126)\n\u2022Diabetes mellitus: diabetic foot and ankle care, ulcer prevention - evaluation of footwear (ID: 127)\n\u2022Documentation of current medications in the medical record (ID: 130)\n\u2022Preventive care and screening: screening for depression and follow -up plan (ID: 134)\n\u2022Falls: plan of care (ID: 155)\n\u2022Elder maltreatment screen and follow -up plan (ID: 181)\n\u2022Functional outcome assessment (ID: 182)\n\u2022Functional status change for patients with knee impairments (ID: 217)\n\u2022Functional status change for patients with hip impairments (ID: 218)\n\u2022Functional status change for patients with lower leg, foot or ankle impairments (ID: 219)\n\u2022Functional status change for patients with low back impairments (ID: 220)\n\u2022Functional status change for patients with shoulder impairments (ID: 221)\n\u2022Functional status change for patients with elbow, wrist or hand impairments (ID: 222)\n\u2022Preventive care and screening: tobacco use: screening and cessation intervention (ID: 226)\n\u2022Dementia: cognitive assessment (ID: 281)The Physical Therapy/Occupational Therapy Specialty Measure Set contains quality measures relevant \nto the physical therapy and occupational therapy specialties and includes the measures below. Quality Performance Category  \u2013 Traditional MIPS (Continued)\n13P E R F O R M A N C E  C A T E G O R I E S\nIn addition, MIPS eligible clinicians, groups, and virtual groups may want to consider applicable \nphysical therapy/occupational therapy -specific Qualified Clinical Data Registry (QCDR) measures that \nare available via the QCDR collection type only. Review the 2024 QCDR measure specifications (XLSX, \n627KB)  on the QPP Resource Library .",
+    "metadata": {
+      "chunk_index": 35,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 70,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Review the 2024 QCDR measure specifications (XLSX, \n627KB)  on the QPP Resource Library . CMS solicits recommendations  from interested parties for potential  consideration  of new  specialty \nmeasure sets  and/or  revisions  to existing  specialty measure sets  on an annual basis. All feedback and \nsubmissions are considered for the next performance year\u2019s rulemaking and are made evident through \npublications of the Physician Fee Schedule proposed and final rules.",
+    "metadata": {
+      "chunk_index": 36,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 72,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "All feedback and \nsubmissions are considered for the next performance year\u2019s rulemaking and are made evident through \npublications of the Physician Fee Schedule proposed and final rules. CMS encourages interested parties to \nwork  with  their  specialty  society  to provide  applicable  measure  recommendations  during  the specialty  \nmeasure  set solicitation  process . Feedback/recommendations for a particular specialty set should be \nsubmitted during the Call for Specialty Sets at the beginning  of the calendar  year .\u2022Dementia: safety concern screening and follow -up for patients with dementia (ID: 286)\n\u2022Dementia: education and support of caregivers for patients with dementia (ID: 288)\n\u2022Assessment of cognitive impairment or dysfunction for patients with Parkinson\u2019s disease (ID: \n291)\n\u2022Falls: screening for future fall risk (ID: 318)\n\u2022Functional status change for patients with neck impairments (ID: 478)\n\u2022Screening for social drivers of health (ID: 487)\n\u2022Connection to community service provider  (ID: 498)\n\u2022Improvement or maintenance of functioning for individuals with a mental and/or substance \nuse disorder (ID: 502)\n\u2022Gains in patient activation measure (PAM) scores at 12 months (ID: 503)\nPromoting Interoperability Performance Category  \u2013 \nTraditional MIPS\n14P E R F O R M A N C E  C A T E G O R I E S\nPromote patient engagement and electronic exchange of information using certified electronic health record \ntechnology (CEHRT)\nIn order to earn a score greater than zero for the Promoting Interoperability performance category, MIPS eligible clinicians,  \ngroups, and virtual groups must:\n25% of final score   \nfor most MIPS eligible \nclinicians, groups, and \nvirtual groups.Collect your data using technology certified to the Office of the National Coordinator for Health Information Technology (ONC ) \nCertification Criteria for Health IT necessary to meet the CEHRT definition (certified by the last day of the performance per iod) for a \nminimum of any continuous 1 80-day period in 2024;\nSubmit a \u201cyes\u201d to the Actions to Limit or Restrict Interoperability of CEHRT Attestation (formerly named Prevention of Inform ation \nBlocking);\nSubmit a \u201cyes\u201d to the SAFER Guides attestation measure; \nSubmit a \u201cyes\u201d or \u201cno\u201d to the ONC Direct Review Attestation;\nSubmit a \u201cyes\u201d that you have completed the Security Risk Analysis measure in 2024;\nReport the 6 to 7 required measures or claim their exclusion(s); and\n\u2022For measures that require a numerator and denominator (as defined in the measure specifications), you must submit at least a \n\u20181\u2019 in the numerator;\nSubmit your level of active engagement for the Public Health and Clinical Data Exchange measures you\u2019re reporting;\nProvide your EHR's CMS identification code from the Certified Health IT Product List (CHPL) , available on HealthIT.gov .",
+    "metadata": {
+      "chunk_index": 37,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 74,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Feedback/recommendations for a particular specialty set should be \nsubmitted during the Call for Specialty Sets at the beginning  of the calendar  year .\u2022Dementia: safety concern screening and follow -up for patients with dementia (ID: 286)\n\u2022Dementia: education and support of caregivers for patients with dementia (ID: 288)\n\u2022Assessment of cognitive impairment or dysfunction for patients with Parkinson\u2019s disease (ID: \n291)\n\u2022Falls: screening for future fall risk (ID: 318)\n\u2022Functional status change for patients with neck impairments (ID: 478)\n\u2022Screening for social drivers of health (ID: 487)\n\u2022Connection to community service provider  (ID: 498)\n\u2022Improvement or maintenance of functioning for individuals with a mental and/or substance \nuse disorder (ID: 502)\n\u2022Gains in patient activation measure (PAM) scores at 12 months (ID: 503)\nPromoting Interoperability Performance Category  \u2013 \nTraditional MIPS\n14P E R F O R M A N C E  C A T E G O R I E S\nPromote patient engagement and electronic exchange of information using certified electronic health record \ntechnology (CEHRT)\nIn order to earn a score greater than zero for the Promoting Interoperability performance category, MIPS eligible clinicians,  \ngroups, and virtual groups must:\n25% of final score   \nfor most MIPS eligible \nclinicians, groups, and \nvirtual groups.Collect your data using technology certified to the Office of the National Coordinator for Health Information Technology (ONC ) \nCertification Criteria for Health IT necessary to meet the CEHRT definition (certified by the last day of the performance per iod) for a \nminimum of any continuous 1 80-day period in 2024;\nSubmit a \u201cyes\u201d to the Actions to Limit or Restrict Interoperability of CEHRT Attestation (formerly named Prevention of Inform ation \nBlocking);\nSubmit a \u201cyes\u201d to the SAFER Guides attestation measure; \nSubmit a \u201cyes\u201d or \u201cno\u201d to the ONC Direct Review Attestation;\nSubmit a \u201cyes\u201d that you have completed the Security Risk Analysis measure in 2024;\nReport the 6 to 7 required measures or claim their exclusion(s); and\n\u2022For measures that require a numerator and denominator (as defined in the measure specifications), you must submit at least a \n\u20181\u2019 in the numerator;\nSubmit your level of active engagement for the Public Health and Clinical Data Exchange measures you\u2019re reporting;\nProvide your EHR's CMS identification code from the Certified Health IT Product List (CHPL) , available on HealthIT.gov . Clinicians must use technology certified to the criterion at 45 CFR 170.315(b)(3)  for the 2024 performance period. Functionality must be in place by the start of the performance period with certification obtained by the last day of the \nperformance period.",
+    "metadata": {
+      "chunk_index": 38,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 76,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Functionality must be in place by the start of the performance period with certification obtained by the last day of the \nperformance period. The 2024 Promoting Interoperability performance category scored objectives are:\n\u2022Provider to Patient Exchange\n\u2022Public Health and Clinical Data Exchange*\u2022e-Prescribing*\n\u2022Health  Information  Exchange (HIE)**Measure exclusions may \nbe applicable. Please \nreview the individual \nmeasure specifications to \nsee if you meet the \nexclusion criteria.",
+    "metadata": {
+      "chunk_index": 39,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 78,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Please \nreview the individual \nmeasure specifications to \nsee if you meet the \nexclusion criteria. You \nmust claim an exclusion \nto have the measure \npoints redistributed to \nanother measure. The \nmeasure specifications \nare on the QPP Resource \nLibrary .",
+    "metadata": {
+      "chunk_index": 40,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 80,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "The \nmeasure specifications \nare on the QPP Resource \nLibrary . Promoting Interoperability Performance Category  \u2013 \nTraditional MIPS  (Continued)\n15P E R F O R M A N C E  C A T E G O R I E S\nExtend performance period to 180 days\n\u2022Performance period extended to a minimum of any continuous 180 -day period within the 2024 calendar year . Regulatory definition of CEHRT revised\n\u2022Regulatory definition of CEHRT to be more flexible in reflecting any changes ONC may make to certification criteria and stand ards \nfor health information technology.",
+    "metadata": {
+      "chunk_index": 41,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 82,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Regulatory definition of CEHRT revised\n\u2022Regulatory definition of CEHRT to be more flexible in reflecting any changes ONC may make to certification criteria and stand ards \nfor health information technology. Self-Assessment of the High Priority Practices Safety Assurance Factors for EHR Resilience Guide (SAFER Guide)\n\u2022Requires the MIPS eligible clinicians to conduct this self -assessment annually and attest a \u201cyes\u201d response. Updated the Query of Prescription Drug Monitoring Program (PDMP) under the e -Prescribing Objective\n\u2022Modified the second exclusion criterion to state that any MIPS eligible clinician who doesn\u2019t electronically prescribe any Sc hedule \nII opioids or Schedule III or IV drugs during the performance period can claim the second exclusion.",
+    "metadata": {
+      "chunk_index": 42,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 84,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Updated the Query of Prescription Drug Monitoring Program (PDMP) under the e -Prescribing Objective\n\u2022Modified the second exclusion criterion to state that any MIPS eligible clinician who doesn\u2019t electronically prescribe any Sc hedule \nII opioids or Schedule III or IV drugs during the performance period can claim the second exclusion. Reweighting the Promoting Interoperability Performance Category\n\u2022Continue to automatically reweight this performance category at 0% for clinical social workers for the calendar year 2024 \nperformance period/2026 MIPS payment year . Promoting Interoperability Performance Category  \u2013 \nTraditional MIPS (Continued)\nQualifying hospital -based, Ambulatory Surgical Center (ASC) -based, small practice, and non -patient -facing MIPS eligible clinicia ns, groups, and \nvirtual groups will automatically have their Promoting Interoperability performance category score reweighted to 0% of the fi nal score.",
+    "metadata": {
+      "chunk_index": 43,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 86,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Promoting Interoperability Performance Category  \u2013 \nTraditional MIPS (Continued)\nQualifying hospital -based, Ambulatory Surgical Center (ASC) -based, small practice, and non -patient -facing MIPS eligible clinicia ns, groups, and \nvirtual groups will automatically have their Promoting Interoperability performance category score reweighted to 0% of the fi nal score. You \ncan find additional information on the Special Statuses  webpage. 16P E R F O R M A N C E  C A T E G O R I E S\nHospital -Based MIPS \nEligible Clinicians A hospital -based MIPS eligible clinician is defined as furnishing 75% or more of their covered professional services in \neither the off -campus outpatient hospital (Place of Service 19), inpatient hospital (Place of Service 21), on -campus \noutpatient hospital (Place of Service 22), or emergency department (Place of Service 23) setting.",
+    "metadata": {
+      "chunk_index": 44,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 88,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "16P E R F O R M A N C E  C A T E G O R I E S\nHospital -Based MIPS \nEligible Clinicians A hospital -based MIPS eligible clinician is defined as furnishing 75% or more of their covered professional services in \neither the off -campus outpatient hospital (Place of Service 19), inpatient hospital (Place of Service 21), on -campus \noutpatient hospital (Place of Service 22), or emergency department (Place of Service 23) setting. \u2022A group or virtual group is considered hospital -based when more than 75% of the clinicians in the group or \nvirtual group are hospital -based MIPS eligible clinicians. Non-Patient -Facing MIPS \nEligible Clinicians A non-patient -facing MIPS eligible clinician is defined as an individual MIPS eligible clinician who bills 100 or \nfewer patient -facing encounters (including Medicare telehealth services defined in section 1834(m)  of the \nSocial Security Act) during the MIPS determination period.",
+    "metadata": {
+      "chunk_index": 45,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 90,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Non-Patient -Facing MIPS \nEligible Clinicians A non-patient -facing MIPS eligible clinician is defined as an individual MIPS eligible clinician who bills 100 or \nfewer patient -facing encounters (including Medicare telehealth services defined in section 1834(m)  of the \nSocial Security Act) during the MIPS determination period. \u2022To qualify as a non -patient -facing group or virtual group, more than 75% of the clinicians in the group or \nvirtual group must meet the definition of a non -patient -facing individual MIPS eligible clinician. \u2022In the case of reweighting to 0%, CMS will assign the 25% from the Promoting Interoperability performance category to another  \nperformance category or categories.",
+    "metadata": {
+      "chunk_index": 46,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 92,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022In the case of reweighting to 0%, CMS will assign the 25% from the Promoting Interoperability performance category to another  \nperformance category or categories. \u2022MIPS eligible clinicians, groups, and virtual groups that qualify for reweighting of the Promoting Interoperability performan ce category can \nstill choose to report if they would like, and if data is submitted, CMS will score their performance and weight their Promot ing  \nInteroperability performance accordingly. See the 2024 Promoting Interoperability Quick Start Guide (PDF, 1MB)  for more information on Promoting Interoperability performance \ncategory objectives and measures, reporting requirements, scoring, and reweighting.",
+    "metadata": {
+      "chunk_index": 47,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 94,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "See the 2024 Promoting Interoperability Quick Start Guide (PDF, 1MB)  for more information on Promoting Interoperability performance \ncategory objectives and measures, reporting requirements, scoring, and reweighting. Comprehensive information about hardship exceptions \nfor the 2024 Promoting Interoperability performance category will be available on the QPP Resource Library  later in the year. Improvement Activities Performance Category  \u2013 Traditional MIPS\n17P E R F O R M A N C E  C A T E G O R I E S\nParticipation in activities that improve clinical practice are encouraged, such as:\n\u2022Ongoing care coordination\n\u2022Clinician and patient shared decision making\n\u2022Using quality improvement best practices and validated tools\n\u2022Regularly using patient safety best practices\n\u2022Making progress in achieving health equity\nDuring the 2024 performance year, MIPS eligible clinicians, groups, and virtual groups will be able to choose from \n100+ activities.",
+    "metadata": {
+      "chunk_index": 48,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 96,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Improvement Activities Performance Category  \u2013 Traditional MIPS\n17P E R F O R M A N C E  C A T E G O R I E S\nParticipation in activities that improve clinical practice are encouraged, such as:\n\u2022Ongoing care coordination\n\u2022Clinician and patient shared decision making\n\u2022Using quality improvement best practices and validated tools\n\u2022Regularly using patient safety best practices\n\u2022Making progress in achieving health equity\nDuring the 2024 performance year, MIPS eligible clinicians, groups, and virtual groups will be able to choose from \n100+ activities. The activities listed below are suggestions, not requirements or preferences on the part of CMS. MIPS eligible clinicians, groups, and virtual groups can choose activities that are most appropriate for their \npractice/patient populations from the full 2024 improvement activities inventory (ZIP, 499KB) .",
+    "metadata": {
+      "chunk_index": 49,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 98,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "MIPS eligible clinicians, groups, and virtual groups can choose activities that are most appropriate for their \npractice/patient populations from the full 2024 improvement activities inventory (ZIP, 499KB) . The MIPS data \nvalidation criteria (ZIP, 599KB)  document provides supporting information and guidance on documentation \nrequirements for improvement activities. The 2024 Improvement Activities Quick Start Guide (PDF, 928KB)  \ncontains additional information.",
+    "metadata": {
+      "chunk_index": 50,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 100,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "The 2024 Improvement Activities Quick Start Guide (PDF, 928KB)  \ncontains additional information. 15% of final score   \nfor most MIPS eligible \nclinicians, groups, and \nvirtual groups. Clinicians may select activities from the posted inventory.",
+    "metadata": {
+      "chunk_index": 51,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 102,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Clinicians may select activities from the posted inventory. Some recommendations for the physical and occupational therapy specialty are \nincluded below:\n\u2022IA_AHE_6 \u2013 Provide education opportunities for new clinicians\n\u2022IA_BE_6 \u2013 Regularly assess patient experience of care and follow up on \nfindings\n\u2022IA_BE_15 \u2013 Engagement of patients, family, and caregivers in \ndeveloping a plan of care\n\u2022IA_BE_25 \u2013 Drug cost transparency\n\u2022IA_CC_9 \u2013 Implementation of practices/processes for developing \nregular individual care plans\n\u2022IA_CC_18 \u2013 Relationship -centered communication\u2022IA_EPA_3 \u2013 Collection and use of patient experience and satisfaction \ndata on access\n\u2022IA_PM_15 \u2013 Implementation of episodic care management practice \nimprovements\n\u2022IA_PSPA_17 \u2013 Implementation of analytic capabilities to manage total \ncost of care for practice population\n\u2022IA_PSPA_19 \u2013 Implementation of formal quality improvement \nmethods, practice  changes, or other practice improvement processes\nNote: Attestation to IA_PCMH: Electronic submission of Patient Centered Medical Home accreditation (or comparable specialty practice) \nimprovement activity results in an improvement activities performance category score of 100% as finalized in the Calendar Yea r (CY) 2021 \nMedicare Physician Fee Schedule (PFS) Final Rule. Cost Performance Category  \u2013 Traditional MIPS\n18P E R F O R M A N C E  C A T E G O R I E S\nHelps create efficiencies in Medicare spending\n\u2022The 2024 performance period includes 2 population -based cost measures:\n\u2022Medicare Spending Per Beneficiary Clinician measure, which assesses costs surrounding a \nhospital stay.",
+    "metadata": {
+      "chunk_index": 52,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 104,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Cost Performance Category  \u2013 Traditional MIPS\n18P E R F O R M A N C E  C A T E G O R I E S\nHelps create efficiencies in Medicare spending\n\u2022The 2024 performance period includes 2 population -based cost measures:\n\u2022Medicare Spending Per Beneficiary Clinician measure, which assesses costs surrounding a \nhospital stay. \u2022Revised Total Per Capita Cost measure, which assesses overall cost of care. \u2022It also includes 27 episode -based cost measures across a range of procedures, acute inpatient medical \nconditions requiring a hospital stay, settings (i.e., emergency medicine), and chronic conditions.",
+    "metadata": {
+      "chunk_index": 53,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 106,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022It also includes 27 episode -based cost measures across a range of procedures, acute inpatient medical \nconditions requiring a hospital stay, settings (i.e., emergency medicine), and chronic conditions. \u2022A full list of the MIPS cost measures is available in the 2024 MIPS Summary of Cost Measures (PDF, \n505KB)  document. \u2022Data for cost measurement are collected from Medicare Parts A and B claims submitted by MIPS eligible \nclinicians, groups, and virtual groups.",
+    "metadata": {
+      "chunk_index": 54,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 108,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022Data for cost measurement are collected from Medicare Parts A and B claims submitted by MIPS eligible \nclinicians, groups, and virtual groups. Certain measures also incorporate Part D costs. Clinicians, groups, \nand virtual groups don\u2019t have to submit any additional data.",
+    "metadata": {
+      "chunk_index": 55,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 110,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Clinicians, groups, \nand virtual groups don\u2019t have to submit any additional data. 30% of final score   \nfor most MIPS eligible \nclinicians, groups, and \nvirtual groups. \u2022For a cost measure to be scored, a MIPS eligible clinician, group, or virtual group must have enough attributed cases to meet  or \nexceed the case minimum for that measure.",
+    "metadata": {
+      "chunk_index": 56,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 112,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "\u2022For a cost measure to be scored, a MIPS eligible clinician, group, or virtual group must have enough attributed cases to meet  or \nexceed the case minimum for that measure. \u2022For most MIPS eligible clinicians, groups, and virtual groups who don\u2019t have a cost performance category score assigned, the \nmajority of the cost weight goes to the quality performance category. This is true if only the cost performance category is \nreweighted.",
+    "metadata": {
+      "chunk_index": 57,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 114,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "This is true if only the cost performance category is \nreweighted. \u2022Benchmarks based on data from the performance period will be established for each cost measure. Since the benchmark isn\u2019t \nbased on a historical baseline period, CMS can\u2019t publish the numerical benchmarks for the cost measures before the start of \neach performance period.",
+    "metadata": {
+      "chunk_index": 58,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 116,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Since the benchmark isn\u2019t \nbased on a historical baseline period, CMS can\u2019t publish the numerical benchmarks for the cost measures before the start of \neach performance period. \u2022A MIPS eligible clinician, group, or virtual group can compare their costs for each measure with the benchmark \ninformation provided in their performance feedback to better understand their performance relative to their peers. Cost Performance Category  \u2013 Traditional MIPS (Continued)\n19P E R F O R M A N C E  C A T E G O R I E S\nCMS will automatically reweight the cost performance category for MIPS eligible clinicians, groups, and virtual groups locate d in a \nCMS -designated region that has been affected by extreme and uncontrollable circumstances.",
+    "metadata": {
+      "chunk_index": 59,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 118,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Cost Performance Category  \u2013 Traditional MIPS (Continued)\n19P E R F O R M A N C E  C A T E G O R I E S\nCMS will automatically reweight the cost performance category for MIPS eligible clinicians, groups, and virtual groups locate d in a \nCMS -designated region that has been affected by extreme and uncontrollable circumstances. \u2022For MIPS eligible clinicians, groups, and virtual groups that are designated in the extreme and uncontrollable circumstances \npolicy, they won\u2019t receive a score for the cost performance category, regardless of whether they have applicable cost \nmeasures. The 2024 Cost Quick Start Guide (PDF, 1MB)  in the Quality Payment Program Resource Library  contains additional information for \nthe cost performance category.",
+    "metadata": {
+      "chunk_index": 60,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 120,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "The 2024 Cost Quick Start Guide (PDF, 1MB)  in the Quality Payment Program Resource Library  contains additional information for \nthe cost performance category. Did you know? If only 1 cost measure can be scored,  that cost measure\u2019s  score  will serve  as the  performance  category  score.",
+    "metadata": {
+      "chunk_index": 61,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 122,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "If only 1 cost measure can be scored,  that cost measure\u2019s  score  will serve  as the  performance  category  score. If 3 out of 25 cost measures are scored, the cost performance category score is the equally -weighted  average  \nof the 3 scored measures . If none of the 25 measures can be scored, the MIPS eligible clinician, group, or \nvirtual group won\u2019 t be scored on c ost, and the weight  of the cost performance  category  would be reweighted.",
+    "metadata": {
+      "chunk_index": 62,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 124,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "If none of the 25 measures can be scored, the MIPS eligible clinician, group, or \nvirtual group won\u2019 t be scored on c ost, and the weight  of the cost performance  category  would be reweighted. Help, Resources, and \nVersion History\n20\n21Contact the Quality Payment \nProgram Service Center by email at \nQPP@cms.hhs.gov , by creating a \nQPP Service Center ticket , or by \nphone at 1 -866-288-8292 (Monday \nthrough Friday, 8 a.m. - 8 p.m. To receive assistance more quickly, \nplease consider calling during non -\npeak hours \u2014before 10 a.m. and \nafter 2 p.m.",
+    "metadata": {
+      "chunk_index": 63,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 126,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "To receive assistance more quickly, \nplease consider calling during non -\npeak hours \u2014before 10 a.m. and \nafter 2 p.m. \u2022People who are deaf or hard of \nhearing can dial 711 to be \nconnected to a TRS \nCommunications Assistant.Visit the Quality Payment Program \nwebsite  for other help and support \ninformation , to learn more about \nMIPS , and to check out the \nresources available in the Quality \nPayment Program Resource Library . Visit the Small Practices page of the \nQuality Payment Program website \nwhere you can sign up for the \nmonthly QPP Small \nPractices Newsletter and find \nresources and information relevant \nfor small practices.Where Can You Go for Help?H E L P ,  R E S O U R C E S ,  A N D  V E R S I O N  H I S T O R Y\nAdditional Resources\nThe following resources are available in the QPP Resource Library and other QPP and CMS webpages:\n\u20222024 MIPS Overview Quick Start Guide (PDF, 1MB)\n\u20222024 MIPS Quick Start Guide for Small Practices (PDF, 1MB)\n\u20222024 MIPS Data Validation Criteria (ZIP, 599KB)\n\u20222024 Quality Quick Start Guide (PDF, 981KB)\n\u20222024 MIPS Eligibility and Participation Quick Start Guide (PDF, 1MB)\n\u20222024 Part B Claims Reporting Quick Start Guide (PDF, 1MB)\n\u20222024 MIPS Quality Measures List (XLSX, 999KB)\n\u20222024 Clinical Quality Measure Specifications and Supporting Documents (ZIP, 58MB)\n\u20222024 Medicare Part B Claims Measure Specifications and Supporting Documents (ZIP, 10MB)\n\u20222024 eCQM  Measure Specifications (Links)\n\u20222024 MIPS Promoting Interoperability Quick Start Guide (PDF, 1MB)\n\u20222024 MIPS Promoting Interoperability Measure Specifications (ZIP, 3MB)\n\u20222024 Improvement Activities Quick Start Guide (PDF, 924KB)\n\u20222024 Improvement Activities Inventory (ZIP, 499KB)\n\u20222024 Cost Quick Start Guide (PDF, 1MB)\n\u20222024 Summary of Cost Measures (PDF, 505KB)\n\u20222024 MIPS Cost Measure Codes Lists (ZIP, 14MB)\n\u20222024 Quality Payment Program Final Rule Resources (ZIP, 1MB)\n22H E L P ,  R E S O U R C E S ,  A N D  V E R S I O N  H I S T O R Y\nVersion History \nIf we need to update this document, changes will be identified here.",
+    "metadata": {
+      "chunk_index": 64,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 128,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "Visit the Small Practices page of the \nQuality Payment Program website \nwhere you can sign up for the \nmonthly QPP Small \nPractices Newsletter and find \nresources and information relevant \nfor small practices.Where Can You Go for Help?H E L P ,  R E S O U R C E S ,  A N D  V E R S I O N  H I S T O R Y\nAdditional Resources\nThe following resources are available in the QPP Resource Library and other QPP and CMS webpages:\n\u20222024 MIPS Overview Quick Start Guide (PDF, 1MB)\n\u20222024 MIPS Quick Start Guide for Small Practices (PDF, 1MB)\n\u20222024 MIPS Data Validation Criteria (ZIP, 599KB)\n\u20222024 Quality Quick Start Guide (PDF, 981KB)\n\u20222024 MIPS Eligibility and Participation Quick Start Guide (PDF, 1MB)\n\u20222024 Part B Claims Reporting Quick Start Guide (PDF, 1MB)\n\u20222024 MIPS Quality Measures List (XLSX, 999KB)\n\u20222024 Clinical Quality Measure Specifications and Supporting Documents (ZIP, 58MB)\n\u20222024 Medicare Part B Claims Measure Specifications and Supporting Documents (ZIP, 10MB)\n\u20222024 eCQM  Measure Specifications (Links)\n\u20222024 MIPS Promoting Interoperability Quick Start Guide (PDF, 1MB)\n\u20222024 MIPS Promoting Interoperability Measure Specifications (ZIP, 3MB)\n\u20222024 Improvement Activities Quick Start Guide (PDF, 924KB)\n\u20222024 Improvement Activities Inventory (ZIP, 499KB)\n\u20222024 Cost Quick Start Guide (PDF, 1MB)\n\u20222024 Summary of Cost Measures (PDF, 505KB)\n\u20222024 MIPS Cost Measure Codes Lists (ZIP, 14MB)\n\u20222024 Quality Payment Program Final Rule Resources (ZIP, 1MB)\n22H E L P ,  R E S O U R C E S ,  A N D  V E R S I O N  H I S T O R Y\nVersion History \nIf we need to update this document, changes will be identified here. D A T E D E S C R I P T I O N\n05/30/2024 Updated slide 8 to align with the Explore MVP webpage. 04/10/2024 Original Posting.",
+    "metadata": {
+      "chunk_index": 65,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 3,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 130,
+      "strategy": "sentence_chunker"
+    }
+  },
+  {
+    "content": "04/10/2024 Original Posting. 23H E L P ,  R E S O U R C E S ,  A N D  V E R S I O N  H I S T O R Y",
+    "metadata": {
+      "chunk_index": 66,
+      "document_type": "pdf_document",
+      "file_path": "test_docs/Test_PDF1.pdf",
+      "sentences_count": 2,
+      "source": "test_docs/Test_PDF1.pdf",
+      "start_sentence_index": 132,
+      "strategy": "sentence_chunker"
+    }
+  }
+]
