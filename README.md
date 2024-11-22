@@ -67,7 +67,11 @@ The service is organized into four main components:
 - `base.py`: Defines the base interface for indexing strategies
 - `strategy_manager.py`: Manages and coordinates different indexing strategies
 - **Strategies**:
-  - `simple_directory_reader.py`: Basic document directory processing
+  - `simple_directory_reader.py`: Directory-based document processing using LlamaIndex integration
+     - Recursively processes all files in a directory
+     - Supports automatic file type detection
+     - Maintains file metadata and structure
+     - Integrates with LlamaIndex's SimpleDirectoryReader
   - `json_indexer.py`: Specialized JSON document processing with path tracking
 
 ### Preprocessing (`src/preprocessing/`)
@@ -126,7 +130,9 @@ The service configuration (`config.py`) includes:
 
 ## Usage Examples
 
-### Document Ingestion
+### Document Ingestion Examples
+
+#### 1. Single Document Processing
 ```python
 POST /api/ingest
 {
@@ -136,8 +142,54 @@ POST /api/ingest
         "type": "txt",
         "metadata": {"source": "example.txt"}
     }],
+    "indexing_strategy": "json_index"
+}
+```
+
+#### 2. Directory Processing with SimpleDirectoryReader
+```python
+POST /api/ingest
+{
+    "client_id": "client123",
+    "documents": [{
+        "content": "",
+        "type": "directory",
+        "metadata": {
+            "directory_path": "/path/to/documents",
+            "source": "document_collection"
+        }
+    }],
     "indexing_strategy": "simple_directory"
 }
+```
+
+The SimpleDirectoryReader strategy provides:
+- Recursive directory traversal
+- Automatic file type detection
+- Metadata preservation
+- File path tracking
+- Timestamp generation
+- Chunk indexing
+
+Response format for directory processing:
+```python
+[
+    {
+        "content": "Extracted text content from file",
+        "metadata": {
+            "source": "/path/to/documents/file1.txt",
+            "chunk_index": 0,
+            "timestamp": "2024-11-22T14:30:00",
+            "strategy": "simple_directory",
+            "file_type": ".txt",
+            "original_metadata": {
+                "file_path": "/path/to/documents/file1.txt",
+                # Additional LlamaIndex metadata
+            }
+        }
+    }
+    # Additional documents...
+]
 ```
 
 ### List Available Strategies
@@ -145,4 +197,11 @@ POST /api/ingest
 GET /api/list-strategies
 Response: ["simple_directory", "json_index"]
 ```
+
+### SimpleDirectoryReader Configuration
+The SimpleDirectoryReader strategy uses LlamaIndex's SimpleDirectoryReader with the following default settings:
+- `recursive=True`: Processes subdirectories recursively
+- `filename_as_id=True`: Uses filenames as document identifiers
+- Supports all common document formats (txt, pdf, etc.)
+- Preserves file hierarchy in metadata
 
