@@ -58,6 +58,36 @@ The service is organized into four main components:
 
 ## Module Descriptions
 
+### Validation and Schema Management (`src/utils/`)
+- `schema_validator.py`: Document metadata validation system
+  - Type-specific validation rules for different document formats
+  - Required and optional field validation
+  - Custom validation functions per document type
+  - Supported document types:
+    - PDF: Page size, PDF/A compliance, version validation
+    - JSON: Schema version and definition validation
+    - HTML: DOCTYPE and structure validation
+    - CSV: Header and column structure validation
+    - Text: Basic encoding and content validation
+    - Word: Version and metadata validation
+  - Automatic file type detection based on extensions
+  - Version control with semver pattern support
+
+### Chunking System (`src/chunking/`)
+- `base.py`: Abstract base class for chunking strategies
+  - Defines interface for custom chunking implementations
+  - Supports parameter validation and metadata enrichment
+- `manager.py`: Chunking strategy management
+  - Dynamic strategy registration and retrieval
+  - Default strategy handling (SentenceChunker)
+  - Unified chunking interface with metadata support
+- Metadata Features:
+  - Chunk indexing and positioning
+  - Strategy identification
+  - Document type preservation
+  - Source tracking
+  - Custom metadata fields per strategy
+
 ### API Gateway (`src/api/`)
 - `routes.py`: Implements REST endpoints for document ingestion and strategy listing
 - Handles request validation and error responses
@@ -129,6 +159,60 @@ The service configuration (`config.py`) includes:
 - Environment-specific configurations
 
 ## Usage Examples
+
+### Document Processing Features
+
+#### Validation System
+The SchemaValidator provides comprehensive validation for different document types:
+```python
+# Example metadata validation for PDF
+{
+    "source": "document.pdf",
+    "document_type": "pdf_document",
+    "page_count": 10,
+    "pdf_version": "1.7",
+    "page_width": 612.0,
+    "page_height": 792.0,
+    "pdfa_compliant": true,
+    "pdfa_version": "2B"
+}
+
+# Example metadata validation for CSV
+{
+    "source": "data.csv",
+    "document_type": "csv_document",
+    "column_count": 5,
+    "header_row": true,
+    "delimiter": ",",
+    "column_names": ["id", "name", "value"]
+}
+```
+
+#### Chunking Strategies
+The system supports multiple chunking strategies through a unified interface:
+```python
+# Example chunking configuration
+{
+    "strategy": "sentence_chunker",
+    "params": {
+        "min_length": 100,
+        "max_length": 1000,
+        "overlap": 50
+    }
+}
+
+# Example chunk output
+{
+    "content": "Chunk content here...",
+    "metadata": {
+        "chunk_index": 0,
+        "document_type": "pdf_document",
+        "source": "document.pdf",
+        "strategy": "sentence_chunker",
+        "start_sentence_index": 0
+    }
+}
+```
 
 ### Document Ingestion Examples
 
